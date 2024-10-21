@@ -136,3 +136,37 @@ button:hover {
         font-size: 14px; /* Smaller font size for buttons on mobile */
     }
 }
+
+
+
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: white; /* Changed black to white */
+    color: black; /* Changed white to black */
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid black; /* Changed from black to white */
+}
+
+th {
+    background-color: orange; /* Changed blue to orange */
+    color: black; /* Changed white to black */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
