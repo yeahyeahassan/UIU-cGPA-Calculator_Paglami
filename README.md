@@ -1,1 +1,1 @@
-# UIU-cGPA-Calculator_Paglami
+# UIU_EEE212_CGPA_Calculator
