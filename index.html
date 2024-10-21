@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CGPA Calculator - United International University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+
+        <!-- Form to input details -->
+        <form id="cgpaForm">
+            <label for="currentCgpa">Enter Current CGPA:</label>
+            <input type="number" id="currentCgpa" placeholder="Your Current CGPA" step="0.01" min="0" max="4" required>
+
+            <label for="completedCredits">Enter Completed Credits:</label>
+            <input type="number" id="completedCredits" placeholder="Your Completed Credits" min="0" required>
+
+            <div id="courses">
+                <h3>New Courses:</h3>
+                <div class="course-entry">
+                    <label for="courseCredit">Enter Course Credit:</label>
+                    <input type="number" class="courseCredit" placeholder="Credit" min="1" step="0.5" required>
+
+                    <label for="courseGrade">Enter Grade Point:</label>
+                    <input type="number" class="courseGrade" placeholder="Grade Point" min="0" max="4" step="0.01" required>
+                </div>
+            </div>
+
+            <button type="button" id="add-course">Add Another Course</button>
+
+            <!-- Retaken courses section -->
+            <div id="retakeCourses">
+                <h3>Retaken Courses (Optional):</h3>
+            </div>
+
+            <button type="button" id="add-retake-course">Add Retake Course</button>
+
+            <button type="submit">Calculate Updated CGPA</button>
+        </form>
+
+        <!-- Result section -->
+        <div id="results">
+            <h3>Your Updated CGPA:</h3>
+            <p id="updatedCgpa">-</p>
+            <p id="extraMessage"></p> <!-- New element to show additional messages -->
+        </div>
+
+        <!-- UIU Grade Sheet Information -->
+        <section id="gradeSheet">
+            <h3>Grade Sheet Range (United International University)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Letter Grade</th>
+                        <th>Grade Point</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>A+</td><td>4.00</td></tr>
+                    <tr><td>A</td><td>3.75</td></tr>
+                    <tr><td>A-</td><td>3.50</td></tr>
+                    <tr><td>B+</td><td>3.25</td></tr>
+                    <tr><td>B</td><td>3.00</td></tr>
+                    <tr><td>B-</td><td>2.75</td></tr>
+                    <tr><td>C+</td><td>2.50</td></tr>
+                    <tr><td>C</td><td>2.25</td></tr>
+                    <tr><td>D</td><td>2.00</td></tr>
+                    <tr><td>F</td><td>0.00</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Assessment Procedure -->
+        <section id="assessment">
+            <h3>Assessment Procedure (Theory & Lab Courses)</h3>
+            <p>Theory courses include assignments, quizzes, midterms, and finals. Lab courses are assessed based on practical work, reports, and viva exams.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
