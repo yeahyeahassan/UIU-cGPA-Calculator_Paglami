@@ -1,138 +1,138 @@
 /* General body styling */
 body {
-    background-color: #f4f4f9;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    background-color: #f4f4f9; /* Light gray background color */
+    color: #333; /* Dark gray text color */
+    font-family: 'Roboto', sans-serif; /* Font style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    line-height: 1.6; /* Set line height for readability */
 }
 
 /* Container for all the content */
 .container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Maximum width of the container */
+    margin: 50px auto; /* Center container with top margin */
+    padding: 20px; /* Padding inside the container */
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Header styling */
 h1 {
-    text-align: center;
-    color: #ff9900;
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-weight: 700;
+    text-align: center; /* Center the header text */
+    color: #ff9900; /* Orange color for the header */
+    font-size: 36px; /* Font size for the header */
+    margin-bottom: 20px; /* Space below the header */
+    font-weight: 700; /* Bold text */
 }
 
 /* Form labels styling */
 label {
-    display: block;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 5px;
+    display: block; /* Labels are block elements */
+    font-weight: 600; /* Semi-bold text for labels */
+    color: #333; /* Dark gray color for labels */
+    margin-bottom: 5px; /* Space below labels */
 }
 
 /* Input fields */
 input[type="number"], input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 20px; /* Space below input fields */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    font-size: 16px; /* Font size for input text */
 }
 
 /* Styling for buttons */
 button {
-    background-color: #ff9900;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: block;
-    margin: 10px 0;
-    width: 100%;
-    text-align: center;
+    background-color: #ff9900; /* Orange background color for buttons */
+    color: #fff; /* White text color for buttons */
+    border: none; /* No border */
+    padding: 12px 20px; /* Padding for buttons */
+    font-size: 16px; /* Font size for button text */
+    font-weight: 600; /* Semi-bold text for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    display: block; /* Block element for buttons */
+    margin: 10px 0; /* Space above and below buttons */
+    width: 100%; /* Full width buttons */
+    text-align: center; /* Center the button text */
 }
 
 button:hover {
-    background-color: #e07b00;
+    background-color: #e07b00; /* Darker orange on hover */
 }
 
 /* Styling for the results section */
 #results {
-    background-color: #f7f7f7;
-    border: 2px solid #ff9900;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 20px;
+    background-color: #f7f7f7; /* Light gray background for results */
+    border: 2px solid #ff9900; /* Orange border around results */
+    padding: 15px; /* Padding inside results section */
+    border-radius: 10px; /* Rounded corners for results section */
+    text-align: center; /* Center text in results section */
+    margin-top: 20px; /* Space above results section */
 }
 
 #results h3 {
-    color: #ff9900;
-    font-size: 24px;
-    margin-bottom: 10px;
+    color: #ff9900; /* Orange color for results header */
+    font-size: 24px; /* Font size for results header */
+    margin-bottom: 10px; /* Space below results header */
 }
 
 #updatedCgpa {
-    font-size: 32px;
-    font-weight: 700;
-    color: #333;
+    font-size: 32px; /* Larger font size for updated CGPA */
+    font-weight: 700; /* Bold text for updated CGPA */
+    color: #333; /* Dark gray color for updated CGPA */
 }
 
 /* Course entry section */
 .course-entry {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Space below course entry section */
 }
 
 .course-entry label {
-    font-size: 14px;
-    color: #666;
+    font-size: 14px; /* Smaller font size for course entry labels */
+    color: #666; /* Gray color for course entry labels */
 }
 
 /* Add buttons styling */
 #add-course, #add-retake-course {
-    background-color: #fff;
-    color: #ff9900;
-    border: 2px solid #ff9900;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    transition: all 0.3s ease;
+    background-color: #fff; /* White background for add buttons */
+    color: #ff9900; /* Orange text color for add buttons */
+    border: 2px solid #ff9900; /* Orange border for add buttons */
+    font-size: 14px; /* Font size for add buttons */
+    font-weight: 600; /* Semi-bold text for add buttons */
+    border-radius: 5px; /* Rounded corners for add buttons */
+    padding: 10px 15px; /* Padding inside add buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-bottom: 10px; /* Space below add buttons */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
 #add-course:hover, #add-retake-course:hover {
-    background-color: #ff9900;
-    color: #fff;
+    background-color: #ff9900; /* Change background color to orange on hover */
+    color: #fff; /* Change text color to white on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        padding: 15px;
+        padding: 15px; /* Adjust padding for smaller screens */
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 28px; /* Smaller font size for header on mobile */
     }
 
     input[type="number"], input[type="text"] {
-        font-size: 14px;
+        font-size: 14px; /* Smaller font size for input fields on mobile */
     }
 
     button {
-        font-size: 14px;
+        font-size: 14px; /* Smaller font size for buttons on mobile */
     }
 }
