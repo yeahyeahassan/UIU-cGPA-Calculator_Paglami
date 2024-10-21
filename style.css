@@ -19,17 +19,12 @@ body {
 }
 
 /* Header styling */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #000; /* Black background for header */
-    color: #fff; /* White text for header */
-    border-radius: 5px;
-    animation: slideIn 0.5s ease; /* Header animation */
-}
-
 h1 {
-    color: #fff; /* White heading */
+    text-align: center; /* Centers the header text horizontally */
+    color: #ff9900; /* Sets the text color to orange */
+    font-size: 36px; /* Sets the font size to 36 pixels */
+    margin-bottom: 20px; /* Adds 20 pixels of space below the header */
+    font-weight: 700; /* Makes the text bold */
 }
 
 /* Form labels styling */
