@@ -27,10 +27,41 @@ document.getElementById('cgpaForm').addEventListener('submit', function(e) {
 
     // Display "You are a failure" if CGPA is above 2.90
     const messageElement = document.getElementById('extraMessage');
-    if (newCgpa > 2.90) {
-        messageElement.textContent = "You are a failure";
-    } else {
-        messageElement.textContent = ""; // Clear any previous message if CGPA is below 2.90
+  
+    if (newCgpa >= 3.67 && newCgpa <= 4.00) {
+        messageElement.textContent = "Grade: A\n";
+    } 
+    else if (newCgpa >= 3.33 && newCgpa < 3.67) {
+        messageElement.textContent = "Grade: A-\n"; 
+    }
+    else if (newCgpa >= 3.00 && newCgpa < 3.33) {
+        messageElement.textContent = "Grade: B+\n"; 
+    }   
+    else if (newCgpa >= 2.67 && newCgpa < 3.00) {
+        messageElement.textContent = "Grade: B\n"; 
+    }   
+    else if (newCgpa >= 2.33 && newCgpa < 2.67) {
+        messageElement.textContent = "Grade: B-\n"; 
+    }   
+    else if (newCgpa >= 2.00 && newCgpa < 2.33) {
+        messageElement.textContent = "Grade: C+\n"; 
+    }   
+    else if (newCgpa >= 1.67 && newCgpa < 2.00) {
+        messageElement.textContent = "Grade: C\n"; 
+    }    
+    else if (newCgpa >= 1.33 && newCgpa < 1.67) {
+        messageElement.textContent = "Grade: C-\n"; 
+    }   
+    else if (newCgpa >= 1.00 && newCgpa < 1.33) {
+        messageElement.textContent = "Grade: D+\n"; 
+    }   
+    else if (newCgpa >= 0.55 && newCgpa < 1.00) {
+        messageElement.textContent = "Grade: D\n"; 
+    }   
+
+        
+    else {
+        messageElement.textContent = "Grade: F (Fail)\n"; 
     }
 });
 
