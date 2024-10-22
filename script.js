@@ -29,39 +29,39 @@ document.getElementById('cgpaForm').addEventListener('submit', function(e) {
     const messageElement = document.getElementById('extraMessage');
   
     if (newCgpa === 4.00) {
-        messageElement.textContent = "Grade: A\n";
+        messageElement.textContent = "Grade: A – Are you an alien or something ? Btw Congratulations King ! Now give treat to your friends .\n";
     } 
     else if (newCgpa >= 3.67 && newCgpa < 4.00) {
-        messageElement.textContent = "Grade: A-\n"; 
+        messageElement.textContent = "Grade: A- – Almost there! What happened? Now ace it completely. \n"; 
     }
     else if (newCgpa >= 3.33 && newCgpa < 3.67) {
-        messageElement.textContent = "Grade: B+\n"; 
+        messageElement.textContent = "Grade: B+ – Decent, but seriously? This close to an A and you thought ‘Eh, good enough’?\n"; 
     }   
     else if (newCgpa >= 3.00 && newCgpa < 3.33) {
-        messageElement.textContent = "Grade: B\n"; 
+        messageElement.textContent = "Grade: B – Doing good. You still have the hope man. \n"; 
     }   
     else if (newCgpa >= 2.67 && newCgpa < 3.00) {
-        messageElement.textContent = "Grade: B-\n"; 
+        messageElement.textContent = "Grade: B- – Good but try give more effort !\n"; 
     }   
     else if (newCgpa >= 2.33 && newCgpa < 2.67) {
-        messageElement.textContent = "Grade: C+\n"; 
+        messageElement.textContent = "Grade: C+ – Are you serious? C+?! Did you even open the slides ?\n"; 
     }   
     else if (newCgpa >= 2.00 && newCgpa < 2.33) {
-        messageElement.textContent = "Grade: C\n"; 
+        messageElement.textContent = "Grade: C – You're barely surviving."; 
     }    
     else if (newCgpa >= 1.67 && newCgpa < 2.00) {
-        messageElement.textContent = "Grade: C-\n"; 
+        messageElement.textContent = "Grade: C- – Wow, you're practically begging for a disaster !\n"; 
     }   
     else if (newCgpa >= 1.33 && newCgpa < 1.67) {
-        messageElement.textContent = "Grade: D+\n"; 
+        messageElement.textContent = "Grade: D+ – One more bad decision and you'll need to start Googling 'how to retake classes'.\n"; 
     }   
     else if (newCgpa >= 1.00 && newCgpa < 1.33) {
-        messageElement.textContent = "Grade: D\n"; 
+        messageElement.textContent = "Grade: D – Yikes! At this point, even Google can't save you!\n"; 
     }   
 
         
     else {
-        messageElement.textContent = "Grade: F (Fail)\n"; 
+        messageElement.textContent = "Grade: F (Fail) – F? Fantastic! You must've worked really hard to hit rock bottom. Congrats, you're a legend. 99+ Missed calls from Tesla !\n"; 
     }
 });
 
