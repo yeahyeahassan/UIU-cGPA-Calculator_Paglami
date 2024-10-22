@@ -5,145 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UniTrack CGPA Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS stylesheet -->
 </head>
 <body>
 
-    <div class="container">
-        <h1>UniTrack CGPA Calculator</h1>
-        <p>"Developed by @yeahyeahassan"</p>
+    <div class="container"> <!-- Main container for the application -->
+        <h1>UniTrack CGPA Calculator</h1> <!-- Main title of the application -->
+        <p>"Developed by @yeahyeahassan"</p> <!-- Developer credit -->
 
-        
-        <!-- Form to input details -->
+        <!-- Form to input details for CGPA calculation -->
         <form id="cgpaForm">
-            <label for="currentCgpa">Enter Current CGPA:</label>
+            <label for="currentCgpa">Enter Current CGPA:</label> <!-- Label for current CGPA input -->
             <input type="number" id="currentCgpa" placeholder="Your Current CGPA" step="0.01" min="0" max="4" required>
 
-            <label for="completedCredits">Enter Completed Credits:</label>
+            <label for="completedCredits">Enter Completed Credits:</label> <!-- Label for completed credits input -->
             <input type="number" id="completedCredits" placeholder="Your Completed Credits" min="0" required>
 
-            <div id="courses">
+            <div id="courses"> <!-- Section for new courses -->
                 <h3>New Courses:</h3>
-                <div class="course-entry">
-                    <label for="courseCredit">Enter Course Credit:</label>
+                <div class="course-entry"> <!-- Container for individual course input -->
+                    <label for="courseCredit">Enter Course Credit:</label> <!-- Label for course credit input -->
                     <input type="number" class="courseCredit" placeholder="Credit" min="1" step="0.5" required>
 
-                    <label for="courseGrade">Enter Grade Point:</label>
+                    <label for="courseGrade">Enter Grade Point:</label> <!-- Label for course grade input -->
                     <input type="number" class="courseGrade" placeholder="Grade Point" min="0" max="4" step="0.01" required>
                 </div>
             </div>
 
-            <button type="button" id="add-course">Add Another Course</button>
+            <button type="button" id="add-course">Add Another Course</button> <!-- Button to add more course entries -->
 
             <!-- Retaken courses section -->
-            <div id="retakeCourses">
-                <h3>Retaken Courses (Optional):</h3>
+            <div id="retakeCourses"> 
+                <h3>Retaken Courses (Optional):</h3> <!-- Section header for retaken courses -->
             </div>
 
-            <button type="button" id="add-retake-course">Add Retake Course</button>
+            <button type="button" id="add-retake-course">Add Retake Course</button> <!-- Button to add a retaken course entry -->
 
-            <button type="submit">Calculate Updated CGPA</button>
+            <button type="submit">Calculate Updated CGPA</button> <!-- Submit button to calculate CGPA -->
         </form>
 
-        <!-- Result section -->
+        <!-- Result section to display updated CGPA -->
         <div id="results">
             <h3>Your Updated CGPA:</h3>
-            <p id="updatedCgpa">-</p>
+            <p id="updatedCgpa">-</p> <!-- Placeholder for updated CGPA result -->
             <p id="extraMessage"></p> <!-- New element to show additional messages -->
         </div>
 
         <!-- UIU Grade Sheet Information -->
-       <section id="gradeSheet">
-            <h3>Grade Sheet Range (United International University)</h3>
-            <table>
+        <section id="gradeSheet">
+            <h3>Grade Sheet Range (United International University)</h3> <!-- Header for the grade sheet section -->
+            <table> <!-- Table for displaying grades and CGPA -->
                 <thead>
                     <tr>
-                        <th>Grade</th>
-                        <th>CGPA</th>
-                        <th>Mark</th>
+                        <th>Grade</th> <!-- Column for grade -->
+                        <th>CGPA</th> <!-- Column for CGPA -->
+                        <th>Mark</th> <!-- Column for marks range -->
                     </tr>
                 </thead>
                 <tbody>
-                           <tr>
-            <td>A</td>
-            <td>4.00</td>
-            <td>90 – 100</td>
-        </tr>
-        <tr>
-            <td>A-</td>
-            <td>3.67</td>
-            <td>86 – 89</td>
-        </tr>
-        <tr>
-            <td>B+</td>
-            <td>3.33</td>
-            <td>82 – 85</td>
-        </tr>
-        <tr>
-            <td>B</td>
-            <td>3.00</td>
-            <td>78 – 81</td>
-        </tr>
-        <tr>
-            <td>B-</td>
-            <td>2.67</td>
-            <td>74 – 77</td>
-        </tr>
-        <tr>
-            <td>C+</td>
-            <td>2.33</td>
-            <td>70 – 73</td>
-        </tr>
-        <tr>
-            <td>C</td>
-            <td>2.00</td>
-            <td>66 – 69</td>
-        </tr>
-        <tr>
-            <td>C-</td>
-            <td>1.67</td>
-            <td>62 – 65</td>
-        </tr>
-        <tr>
-            <td>D+</td>
-            <td>1.33</td>
-            <td>58 – 61</td>
-        </tr>
-        <tr>
-            <td>D</td>
-            <td>1.00</td>
-            <td>55 – 57</td>
-        </tr>
-        <tr>
-            <td>F</td>
-            <td>0.00</td>
-            <td>00 – 54</td>
-        </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>4.00</td>
+                        <td>90 – 100</td>
+                    </tr>
+                    <tr>
+                        <td>A-</td>
+                        <td>3.67</td>
+                        <td>86 – 89</td>
+                    </tr>
+                    <tr>
+                        <td>B+</td>
+                        <td>3.33</td>
+                        <td>82 – 85</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>3.00</td>
+                        <td>78 – 81</td>
+                    </tr>
+                    <tr>
+                        <td>B-</td>
+                        <td>2.67</td>
+                        <td>74 – 77</td>
+                    </tr>
+                    <tr>
+                        <td>C+</td>
+                        <td>2.33</td>
+                        <td>70 – 73</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>2.00</td>
+                        <td>66 – 69</td>
+                    </tr>
+                    <tr>
+                        <td>C-</td>
+                        <td>1.67</td>
+                        <td>62 – 65</td>
+                    </tr>
+                    <tr>
+                        <td>D+</td>
+                        <td>1.33</td>
+                        <td>58 – 61</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>1.00</td>
+                        <td>55 – 57</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>0.00</td>
+                        <td>00 – 54</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- Assessment Procedure -->
         <section id="assessment">
-            <h2>Theory and Lab Course Structure</h2>
-  <p>Our academic structure for courses follows a detailed assessment plan, ensuring that students are comprehensively evaluated across multiple areas of performance.</p>
-  
-  <h3>Theory Courses (3 Credits)</h3>
-  <p>The total marks for theory courses are distributed as follows:</p>
-  <ul>
-    <li><strong>Assignments:</strong> 5 marks</li>
-    <li><strong>Attendance:</strong> 5 marks</li>
-    <li><strong>Midterm Exam:</strong> 30 marks</li>
-    <li><strong>Final Exam:</strong> 40 marks</li>
-    <li><strong>Class Tests/Quizzes:</strong> 20 marks (Best 3 out of 4 quizzes are considered, and their average is taken)</li>
-  </ul>
-  <p><strong>Pass Marks:</strong> Students must achieve a minimum of 55 out of 100 marks to pass the course.</p>
-  
-  <h3>Lab Courses (1 Credit)</h3>
-  <p>Lab courses are assessed based on practical performance and report submissions. These are typically structured around hands-on experiments and are valued at 1 credit per course.</p>
+            <h2>Theory and Lab Course Structure</h2> <!-- Header for assessment procedure -->
+            <p>Our academic structure for courses follows a detailed assessment plan, ensuring that students are comprehensively evaluated across multiple areas of performance.</p>
+
+            <h3>Theory Courses (3 Credits)</h3> <!-- Header for theory courses -->
+            <p>The total marks for theory courses are distributed as follows:</p>
+            <ul> <!-- List of assessment criteria for theory courses -->
+                <li><strong>Assignments:</strong> 5 marks</li>
+                <li><strong>Attendance:</strong> 5 marks</li>
+                <li><strong>Midterm Exam:</strong> 30 marks</li>
+                <li><strong>Final Exam:</strong> 40 marks</li>
+                <li><strong>Class Tests/Quizzes:</strong> 20 marks (Best 3 out of 4 quizzes are considered, and their average is taken)</li>
+            </ul>
+            <p><strong>Pass Marks:</strong> Students must achieve a minimum of 55 out of 100 marks to pass the course.</p>
+
+            <h3>Lab Courses (1 Credit)</h3> <!-- Header for lab courses -->
+            <p>Lab courses are assessed based on practical performance and report submissions. These are typically structured around hands-on experiments and are valued at 1 credit per course.</p>
         </section>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
 </html>
