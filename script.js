@@ -28,7 +28,7 @@ document.getElementById('cgpaForm').addEventListener('submit', function(e) {
     // Display "You are a failure" if CGPA is above 2.90
     const messageElement = document.getElementById('extraMessage');
   
-    if (newCgpa = 4.00) {
+    if (newCgpa === 4.00) {
         messageElement.textContent = "Grade: A\n";
     } 
     else if (newCgpa >= 3.67 && newCgpa < 4.00) {
